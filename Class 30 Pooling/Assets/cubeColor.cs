@@ -24,6 +24,11 @@ public class cubeColor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ControlTimer();
+    }
+
+    private void ControlTimer()
+    {
         lifetime -= Time.deltaTime;
         if (lifetime <= 0)
         {

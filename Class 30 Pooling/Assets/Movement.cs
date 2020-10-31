@@ -20,7 +20,7 @@ public class Movement : MonoBehaviour
         LaneMovement();
         MoveForward();
     }
-
+    
     private void LaneMovement()
     {
         if (Input.GetKeyDown(KeyCode.D))
@@ -41,6 +41,8 @@ public class Movement : MonoBehaviour
 
     private void MoveForward()
     {
+        //float horiz = Input.GetAxis("Horizontal");
+        //transform.Translate(transform.forward * forwardSpeed + transform.right * horiz * forwardSpeed);
         transform.Translate(transform.forward * forwardSpeed);
     }
 }

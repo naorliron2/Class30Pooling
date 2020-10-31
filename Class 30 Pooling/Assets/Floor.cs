@@ -17,6 +17,11 @@ public class Floor : MonoBehaviour
     }
     private void Update()
     {
+        ControlTimer();
+    }
+
+    private void ControlTimer()
+    {
         if (startTimer)
         {
             timer -= Time.deltaTime;
@@ -27,6 +32,7 @@ public class Floor : MonoBehaviour
             }
         }
     }
+
     public void ResetFloor()
     {
         startTimer = false;

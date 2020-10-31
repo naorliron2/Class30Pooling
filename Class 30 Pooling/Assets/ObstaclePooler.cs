@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FloorPooling : MonoBehaviour
+public class ObstaclePooler : MonoBehaviour
 {
     [SerializeField] List<GameObject> pool = new List<GameObject>();
     [SerializeField] GameObject adamPrefab;
@@ -20,8 +20,8 @@ public class FloorPooling : MonoBehaviour
             GameObject instance = Instantiate(adamPrefab, trash);
             instance.SetActive(false);
             pool.Add(instance);
-            Floor floorScript = instance.GetComponent<Floor>();
-            floorScript.pool = this;
+            Obstacle obstacleScript = instance.GetComponent<Obstacle>();
+            obstacleScript.Bind(this);
         }
     }
 
