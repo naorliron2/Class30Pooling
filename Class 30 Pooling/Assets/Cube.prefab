@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 7683541179410421062}
   - component: {fileID: 485493048949009470}
   - component: {fileID: 6955147746289365503}
-  m_Layer: 0
+  - component: {fileID: -3400728350419880000}
+  m_Layer: 8
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: OnTrack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,5 +107,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c46ff910d95cf5348adffeca5dd07465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToReturnToPool: 3
+  timeToReturnToPool: 5
   pool: {fileID: 0}
+--- !u!54 &-3400728350419880000
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606699870440179173}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
